@@ -29,4 +29,8 @@ export default {
     background: "#ffffffde",
     text: "#242424",
   },
+
+  footer: {
+    color: "#ffffffde",
+  },
 };

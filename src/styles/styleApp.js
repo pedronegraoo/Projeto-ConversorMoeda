@@ -9,10 +9,16 @@ export const WrapperGlobal = styled.section`
 
   display: flex;
   flex-direction: column;
-  align-items: center;
+  justify-content: space-between;
 
   background-color: ${(props) => props.theme.colors.background};
   color: ${(props) => props.theme.colors.text};
+`;
+
+export const WrapperContent = styled.div`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 
   h1 {
     font-size: 2.3rem;
@@ -80,5 +86,20 @@ export const BntToggleTheme = styled.div`
   }
 
   @media ${breakpoints.sm} {
+  }
+`;
+
+export const WrapperFooter = styled.footer`
+  color: ${(props) => props.theme.footer.color};
+  text-align: center;
+  font-family: var(--font-Barlow);
+  font-size: 0.8rem;
+
+  @media ${breakpoints.md} {
+    font-size: 0.7rem;
+  }
+
+  @media ${breakpoints.sm} {
+    font-size: 0.6rem;
   }
 `;

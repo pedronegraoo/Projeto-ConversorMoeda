@@ -20,7 +20,7 @@ function Provider({ children }) {
     setResult((state) => (state = response));
 
     // console.log(result);
-    console.log(conversao);
+    // console.log(conversao);
   }
 
   function handleSelect(ev) {
