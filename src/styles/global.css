@@ -1,0 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=PT+Sans:wght@700&display=swap");
+
+:root {
+  --backgroundColorDark: #242424;
+  --backgroundColorLight: #f6f6f6;
+  --color-white: #ffffffde;
+
+  --font-Barlow: "Barlow";
+  --font-ptSans: "PT Sans";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
