@@ -28,8 +28,4 @@ export default {
     background: "#242424",
     text: "#ffffffde",
   },
-
-  footer: {
-    color: "#242424",
-  },
 };

@@ -90,10 +90,12 @@ export const BntToggleTheme = styled.div`
 `;
 
 export const WrapperFooter = styled.footer`
-  color: ${(props) => props.theme.footer.color};
   text-align: center;
-  font-family: var(--font-Barlow);
-  font-size: 0.8rem;
+
+  p {
+    font-size: 0.8rem;
+    font-family: var(--font-Barlow);
+  }
 
   @media ${breakpoints.md} {
     font-size: 0.7rem;
