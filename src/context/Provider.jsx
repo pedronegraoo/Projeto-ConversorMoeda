@@ -11,11 +11,14 @@ function Provider({ children }) {
     value: "1",
   });
   const [result, setResult] = useState([]);
+  const [loading, setLoading] = useState(false);
 
   async function handleSubmit(ev) {
     ev.preventDefault();
+    setLoading(true);
 
     const response = await fetchApi(conversao);
+    setLoading(false);
 
     setResult((state) => (state = response));
 
@@ -46,6 +49,7 @@ function Provider({ children }) {
     handleSubmit,
     handleSelect,
     cleanResult,
+    loading,
   };
 
   return <AppContext.Provider value={value}>{children}</AppContext.Provider>;

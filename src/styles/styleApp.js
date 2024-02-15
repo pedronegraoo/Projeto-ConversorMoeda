@@ -95,6 +95,7 @@ export const WrapperFooter = styled.footer`
   p {
     font-size: 0.8rem;
     font-family: var(--font-Barlow);
+    margin: 0;
   }
 
   @media ${breakpoints.md} {
