@@ -1,6 +1,6 @@
-import useApp from "../../hooks/useApp";
-import Loading from "../Spinners/Spinner";
 import * as S from "./styleResult";
+import useApp from "../../hooks/useApp";
+import Loading from "../Loading/Loading";
 
 function Result() {
   const { result, conversao, loading } = useApp();
@@ -19,7 +19,6 @@ function Result() {
           <span>{conversao.target}</span>
           {loading ? <Loading /> : <span>{result[1]}</span>}
         </S.WrapperTargetResult>
-        {/* <span>{FormatCurrency(result[1], conversao.target)}</span> */}
       </S.WrapperResult>
     </S.ResultGlobal>
   );
